@@ -8,7 +8,8 @@ function jobSubmit(){
     event.preventDefault();
 
     var matchObj= {
-        matchNumber :document.querySelector("#matchNum").value ,
+
+     matchNumber:document.querySelector("#matchNum").value ,
         TeamA :document.querySelector("#teamA").value ,
         TeamB :document.querySelector("#teamB").value ,
          Date :document.querySelector("#date").value ,

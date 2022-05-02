@@ -4,9 +4,10 @@ var MsatchArr= JSON.parse(localStorage.getItem("favourites"));
  function displayData(data){
     data.forEach(function (elem ,index){
         var tr =document.createElement("tr");
-
-        var td1 =document.createElement("td");
-        td1.innerText =elem.TeamA;
+  var matchNumber=document.createElement("td")
+  td1.innerText=elem.matchNumber;
+        var td2 =document.createElement("td");
+        td2.innerText =elem.TeamA;
 
         var td1 =document.createElement("td");
         td2.innerText =elem.TeamB;
@@ -35,5 +36,5 @@ var MsatchArr= JSON.parse(localStorage.getItem("favourites"));
      MsatchArr.splice(index,i);
      localStorage.setItem("favourites",JSON.stringify(MsatchArr));
      window.location.reload();
-     
+
  }
